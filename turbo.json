@@ -2,7 +2,6 @@
 	"$schema": "https://turbo.build/schema.json",
 	"pipeline": {
 		"compile": {
-			"dependsOn": ["^compile"],
 			"inputs": ["src/**", "tsconfig.json", "package.json"],
 			"outputs": ["lib/**", "tmp/**"]
 		},
