@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   check-next-version:
     runs-on: ubuntu-latest
@@ -79,9 +79,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: .turbo
-          key: turbo-master-${{ github.sha }}
+          key: turbo-main-${{ github.sha }}
           restore-keys: |
-            turbo-master
+            turbo-main
       
       - name: Install dependencies
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
@@ -103,7 +103,7 @@ jobs:
 
       - name: Creates release branch
         run: |
-          git checkout -b release/${{ needs.check-next-version.outputs.next_version }} origin/master
+          git checkout -b release/${{ needs.check-next-version.outputs.next_version }} origin/main
           git push origin release/${{ needs.check-next-version.outputs.next_version }}
 
       - name: Pushes Git tag

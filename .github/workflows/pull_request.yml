@@ -38,12 +38,12 @@ jobs:
           restore-keys: |
             turbo-${{ github.ref_name }}
 
-      - name: Restore turbo cache from master
+      - name: Restore turbo cache from main
         if: steps.cache-turbo.outputs.cache-hit != 'true'
         uses: actions/cache/restore@v3
         with:
           path: .turbo
-          key: turbo-master
+          key: turbo-main
       
       - name: Install dependencies
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
