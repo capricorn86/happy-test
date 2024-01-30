@@ -1,0 +1,39 @@
+{
+	"name": "root",
+	"author": "David Ortner",
+	"license": "MIT",
+    "private": "true",
+	"publishConfig": {
+		"access": "restricted"
+	},
+	"keywords": [
+		"happy",
+        "test"
+	],
+	"scripts": {
+		"compile": "turbo run compile",
+		"clean": "git clean -Xdfq",
+		"lint": "eslint --max-warnings 0 --cache --cache-location ./.turbo/eslint.cache .",
+		"lint:fix": "eslint --max-warnings 0 --cache --cache-location ./.turbo/eslint.cache --fix .",
+		"test": "turbo run test",
+		"prepare": "node -e \"process.env.NODE_ENV != 'production' && process.exit(1)\" || husky install"
+	},
+	"devDependencies": {
+		"happy-conventional-commit": "^0.0.18",
+		"@typescript-eslint/eslint-plugin": "^6.19.0",
+		"@typescript-eslint/parser": "^6.19.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-filenames": "^1.3.2",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jsdoc": "^48.0.2",
+		"eslint-plugin-json": "^3.1.0",
+		"eslint-plugin-prettier": "^5.1.3",
+		"husky": "^8.0.3",
+		"turbo": "^1.11.3",
+		"prettier": "^3.2.4"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}

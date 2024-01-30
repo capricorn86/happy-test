@@ -1,0 +1,32 @@
+{
+	"name": "happy-test",
+	"description": "Run tests in a way that makes you happy. This package is still in development. It is not ready for use.",
+	"version": "0.0.0",
+	"author": "David Ortner",
+	"license": "MIT",
+	"homepage": "https://github.com/capricorn86/happy-test/",
+	"repository": "https://github.com/capricorn86/happy-test/",
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [
+		"happy",
+        "test"
+	],
+	"scripts": {
+		"compile": "tsc",
+		"watch": "tsc -w --preserveWatchOutput",
+		"test": "",
+		"test:watch": "",
+		"test:debug": ""
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.0",
+		"husky": "^8.0.3",
+		"prettier": "^3.2.4",
+		"typescript": "^5.3.3"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}
