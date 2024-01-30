@@ -2,13 +2,16 @@
 	"name": "root",
 	"author": "David Ortner",
 	"license": "MIT",
-    "private": "true",
+	"private": true,
 	"publishConfig": {
 		"access": "restricted"
 	},
 	"keywords": [
 		"happy",
-        "test"
+		"test"
+	],
+	"workspaces": [
+		"packages/*"
 	],
 	"scripts": {
 		"compile": "turbo run compile",

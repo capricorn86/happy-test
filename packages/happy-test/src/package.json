@@ -11,7 +11,7 @@
 	},
 	"keywords": [
 		"happy",
-        "test"
+		"test"
 	],
 	"scripts": {
 		"compile": "tsc",
@@ -22,8 +22,6 @@
 	},
 	"devDependencies": {
 		"@types/node": "^18.0.0",
-		"husky": "^8.0.3",
-		"prettier": "^3.2.4",
 		"typescript": "^5.3.3"
 	},
 	"engines": {
