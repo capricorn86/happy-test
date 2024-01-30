@@ -6,10 +6,6 @@
 	"publishConfig": {
 		"access": "restricted"
 	},
-	"keywords": [
-		"happy",
-		"test"
-	],
 	"workspaces": [
 		"packages/*"
 	],
